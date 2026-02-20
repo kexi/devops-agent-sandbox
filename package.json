@@ -1,0 +1,27 @@
+{
+  "name": "devops-agent-sandbox",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc -b",
+    "cdk": "pnpm --filter @devops-agent-sandbox/infra exec cdk",
+    "deploy": "pnpm --filter @devops-agent-sandbox/infra exec cdk deploy",
+    "synth": "pnpm --filter @devops-agent-sandbox/infra exec cdk synth"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.56.0",
+    "vitest": "^4.0.18"
+  }
+}

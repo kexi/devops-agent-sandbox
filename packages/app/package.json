@@ -1,0 +1,17 @@
+{
+  "name": "@devops-agent-sandbox/app",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "typescript": "~5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

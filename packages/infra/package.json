@@ -1,0 +1,23 @@
+{
+  "name": "@devops-agent-sandbox/infra",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy"
+  },
+  "dependencies": {
+    "@devops-agent-sandbox/app": "workspace:*",
+    "aws-cdk-lib": "^2.238.0",
+    "constructs": "^10.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "aws-cdk": "^2.238.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.3"
+  }
+}
